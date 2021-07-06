@@ -77,15 +77,10 @@ WSGI_APPLICATION = 'mis.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'lakshit_inno',
-        'USER':'root',
-        'PASSWORD':'admin1234',
-        'HOST':'localhost',
-        'PORT':'3307',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
